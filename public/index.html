@@ -1,24 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Redux Link</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header
+      class="flex flex-row items-center justify-around bg-gradient-to-r from-primary-100 to-primary-50"
+    >
+      <img class="w-16 h-16" src="/img/logo.jpg" alt="logo site" />
+      <nav class="flex gap-6">
+        <a class="font-varela hover:font-bold"> Sobre </a>
+        <a class="font-varela"> Contato </a>
+      </nav>
+    </header>
+
+    <main>
+      <section>
         <div>
-            <a>Redux Link</a>
-            <button></button>
-            <div>
-                <div>
-                    <a>Contato</a>
-                </div>
-            </div>
+          <h1 class="font-varela">Encurte seus links</h1>
+          <h3 class="font-varela">
+            <strong>Diminuia o tamanho</strong> dos seus links e
+            <strong>adicione senhas</strong> para o acesso.
+          </h3>
         </div>
-    </nav>
+        <img
+          class="w-80 h-80"
+          src="/img/principalimg.jpg"
+          alt="imagem personagem"
+        />
+      </section>
 
+      <section>
+        <h1 class="font-varela">Funcionalidades:</h1>
+      </section>
+    </main>
 
-</body>
+    <footer class="font-varela">
+      <a>Sobre</a>
+      <a>Contato</a>
+      <a>LinkedIn</a>
+    </footer>
+  </body>
 </html>
