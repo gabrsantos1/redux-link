@@ -23,14 +23,19 @@
       </nav>
     </header>
 
-    <main>
-      <section>
-        <div>
-          <h1 class="font-varela">Encurte seus links</h1>
-          <h3 class="font-varela">
-            <strong>Diminuia o tamanho</strong> dos seus links e
-            <strong>adicione senhas</strong> para o acesso.
+    <main class="border-t-2 border-t-black">
+      <section class="flex flex-row items-center justify-around">
+        <div class="flex flex-col gap-1">
+          <h1 class="font-varela text-2xl">
+            Encurte seus links com facilidade
+          </h1>
+          <h3 class="font-varela text-3xl">
+            <strong>Diminuia o tamanho</strong> dos seus links <br />
+            e <strong>adicione senhas</strong> para o acesso.
           </h3>
+          <br />
+          <input type="text" placeholder="Cole sua URL aqui." />
+          <button class="rounded-md">Encurtar</button>
         </div>
         <img
           class="w-80 h-80"
@@ -41,10 +46,15 @@
 
       <section>
         <h1 class="font-varela">Funcionalidades:</h1>
+        <ul>
+          <li>Redução de links</li>
+          <li>Proteção de URL</li>
+          <li>Monitoramento de acesso</li>
+        </ul>
       </section>
     </main>
 
-    <footer class="font-varela">
+    <footer class="font-varela my-10">
       <a>Sobre</a>
       <a>Contato</a>
       <a>LinkedIn</a>
