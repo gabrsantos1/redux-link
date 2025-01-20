@@ -12,6 +12,7 @@
     <title>Redux Link</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header
       class="flex flex-row items-center justify-around bg-gradient-to-r from-primary-100 to-primary-50"
@@ -19,12 +20,12 @@
       <img class="w-16 h-16" src="/img/logo.jpg" alt="logo site" />
       <nav class="flex gap-6">
         <a class="font-varela hover:font-bold"> Sobre </a>
-        <a class="font-varela"> Contato </a>
+        <a class="font-varela hover:font-bold"> Contato </a>
       </nav>
     </header>
 
     <main class="border-t-2 border-t-black">
-      <section class="flex flex-row items-center justify-around">
+      <section class="flex flex-row items-center justify-around mt-32">
         <div class="flex flex-col gap-1">
           <h1 class="font-varela text-2xl">
             Encurte seus links com facilidade
@@ -34,8 +35,21 @@
             e <strong>adicione senhas</strong> para o acesso.
           </h3>
           <br />
-          <input type="text" placeholder="Cole sua URL aqui." />
-          <button class="rounded-md">Encurtar</button>
+          <div class="border border-primary-50 rounded-md shadow-md">
+            <input type="text" placeholder="Cole sua URL aqui." />
+          </div>
+          <div class="flex flex-row gap-x-9 justify-center">
+            <button
+              class="font-varela rounded-md bg-primary-20 shadow-md transition ease-in-out delay-70 hover:bg-primary-100 w-36 h-10"
+            >
+              Encurtar
+            </button>
+            <button
+              class="font-varela rounded-md bg-primary-50 shadow-md transition ease-in-out delay-70 hover:bg-primary-100 w-36 h-10"
+            >
+              Adicionar senha
+            </button>
+          </div>
         </div>
         <img
           class="w-80 h-80"
@@ -44,20 +58,24 @@
         />
       </section>
 
-      <section>
-        <h1 class="font-varela">Funcionalidades:</h1>
-        <ul>
-          <li>Redução de links</li>
-          <li>Proteção de URL</li>
-          <li>Monitoramento de acesso</li>
-        </ul>
+      <section class="font-varela flex flex-col items-center gap-5 mt-44">
+        <h1 class="border-t-2 border-t-black pt-12 font-semibold mb-8">
+          Funcionalidades:
+        </h1>
+        <p>1. Redução de links: encurta o tamanho dos seus links.</p>
+        <p>2. Proteção de URL: possibilita a adição de senhas para o acesso.</p>
+        <p>
+          3. Monitoramento de acesso: permite acompanhar os acessos ao seu link.
+        </p>
       </section>
     </main>
 
-    <footer class="font-varela my-10">
+    <footer
+      class="font-varela my-10 border-t-2 border-t-black p-5 flex flex-row justify-center gap-x-10 bg-gradient-to-l from-yellow-700 to-yellow-800"
+    >
       <a>Sobre</a>
       <a>Contato</a>
-      <a>LinkedIn</a>
+      <a href="https://www.linkedin.com/in/gabrielfasantos/">LinkedIn</a>
     </footer>
   </body>
 </html>
