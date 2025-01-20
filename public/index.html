@@ -35,12 +35,14 @@
             e <strong>adicione senhas</strong> para o acesso.
           </h3>
           <br />
+
           <div class="border border-primary-50 rounded-md shadow-md">
-            <input type="text" placeholder="Cole sua URL aqui." />
+            <input type="text" id="url" placeholder="Cole sua URL aqui." />
           </div>
           <div class="flex flex-row gap-x-9 justify-center">
             <button
               class="font-varela rounded-md bg-primary-20 shadow-md transition ease-in-out delay-70 hover:bg-primary-100 w-36 h-10"
+              onclick="shorten()"
             >
               Encurtar
             </button>
@@ -77,5 +79,6 @@
       <a>Contato</a>
       <a href="https://www.linkedin.com/in/gabrielfasantos/">LinkedIn</a>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
