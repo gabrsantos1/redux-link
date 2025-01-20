@@ -17,10 +17,12 @@
     <header
       class="flex flex-row items-center justify-around bg-gradient-to-r from-primary-100 to-primary-50"
     >
-      <img class="w-16 h-16" src="/img/logo.jpg" alt="logo site" />
+      <a href="./index.html" class="hover:bg-primary-20">
+        <img class="w-16 h-16" src="/img/logo.jpg" alt="logo site" />
+      </a>
       <nav class="flex gap-6">
-        <a class="font-varela hover:font-bold"> Sobre </a>
-        <a class="font-varela hover:font-bold"> Contato </a>
+        <a class="font-varela hover:font-bold" href="./about.html"> Sobre </a>
+        <a class="font-varela hover:font-bold" href="./contact.html"> Contato </a>
       </nav>
     </header>
 
@@ -36,18 +38,16 @@
           </h3>
           <br />
 
-          <div class="border border-primary-50 rounded-md shadow-md">
-            <input type="text" id="url" placeholder="Cole sua URL aqui." />
-          </div>
-          <div class="flex flex-row gap-x-9 justify-center">
+            <input class="h-9 border border-primary-50 rounded-xl shadow-md text-center" type="text" id="url" placeholder="Cole sua URL aqui" />
+          <div class="pt-4 flex flex-row gap-x-9 justify-center">
             <button
-              class="font-varela rounded-md bg-primary-20 shadow-md transition ease-in-out delay-70 hover:bg-primary-100 w-36 h-10"
+              class="font-varela rounded-xl bg-primary-20 shadow-md transition ease-in-out delay-70 hover:bg-primary-100 w-36 h-10"
               onclick="shorten()"
             >
               Encurtar
             </button>
             <button
-              class="font-varela rounded-md bg-primary-50 shadow-md transition ease-in-out delay-70 hover:bg-primary-100 w-36 h-10"
+              class="font-varela rounded-xl bg-primary-50 shadow-md transition ease-in-out delay-70 hover:bg-primary-100 w-36 h-10"
             >
               Adicionar senha
             </button>
@@ -73,11 +73,11 @@
     </main>
 
     <footer
-      class="font-varela my-10 border-t-2 border-t-black p-5 flex flex-row justify-center gap-x-10 bg-gradient-to-l from-yellow-700 to-yellow-800"
+      class="mb-0 sticky font-varela my-10 border-t-2 border-t-black p-5 flex flex-row justify-center gap-x-10 bg-gradient-to-l from-yellow-700 to-yellow-800"
     >
-      <a>Sobre</a>
-      <a>Contato</a>
-      <a href="https://www.linkedin.com/in/gabrielfasantos/">LinkedIn</a>
+      <a href="./about.html" class="font-varela hover:font-bold">Sobre</a>
+      <a href="./contact.html" class="font-varela hover:font-bold">Contato</a>
+      <a href="https://www.linkedin.com/in/gabrielfasantos/" target="_blank" class="font-varela hover:font-bold">LinkedIn</a>
     </footer>
     <script src="./script.js"></script>
   </body>

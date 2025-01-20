@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redux Link</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header
+      class="flex flex-row items-center justify-around bg-gradient-to-r from-primary-100 to-primary-50"
+    >
+      <a href="./index.html" class="hover:bg-primary-20">
+        <img class="w-16 h-16" src="/img/logo.jpg" alt="logo site"/>
+      </a>
+      <nav class="flex gap-6">
+        <a class="font-varela hover:font-bold" href="./about.html"> Sobre </a>
+        <a class="font-varela hover:font-bold" href="./contact.html"> Contato </a>
+      </nav>
+    </header>
+
+    <main class="border-t-2 border-t-black">
+        <section class="flex flex-row items-center justify-center mt-32">
+          <div class="flex flex-col gap-1">
+            <h1 class="font-varela text-2xl pb-4 flex justify-center">
+              Entre em contato:</h1>
+              <input class="h-9 w-96 border border-primary-50 rounded-xl shadow-md text-center" type="text" id="name" placeholder="Nome" />
+              <input class="h-9 border border-primary-50 rounded-xl shadow-md text-center" type="text" id="email" placeholder="E-mail" />
+              <input class="h-9 border border-primary-50 rounded-xl shadow-md text-center" type="text" id="subject" placeholder="Assunto" />
+            <div class="pt-4 flex flex-row gap-x-9 justify-center">
+              <button
+                class="font-varela rounded-xl bg-primary-50 shadow-md transition ease-in-out delay-70 hover:bg-primary-100 w-36 h-10"
+                onclick=""
+              >
+                Enviar!
+              </button>
+            </div>
+          </div>
+          <img
+            class="w-80 h-80"
+            src="/img/mailbox.jpg"
+            alt="imagem email"
+          />
+        </section>
+
+    <footer
+    class="mb-0 sticky font-varela my-10 border-t-2 border-t-black p-5 flex flex-row justify-center gap-x-10 bg-gradient-to-l from-yellow-700 to-yellow-800"
+  >
+    <a href="./about.html" class="font-varela hover:font-bold">Sobre</a>
+    <a href="./contact.html" class="font-varela hover:font-bold">Contato</a>
+    <a href="https://www.linkedin.com/in/gabrielfasantos/" target="_blank" class="font-varela hover:font-bold ">LinkedIn</a>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
