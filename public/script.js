@@ -27,3 +27,26 @@ function shorten() {
       url.value = json.shorten;
     });
 }
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  let data = {
+      nome: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      mensagem: document.getElementById("subject").value
+  };
+
+  fetch("https://script.google.com/macros/s/AKfycbyUs9y5PFDc7fYn1_Ee7_ErcFVFoi49YH8Cz_FX-PxMPTyNRsDjJdE-JOUjuEir4zE/exec", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+  })
+  .then(response => response.text())
+  .then(data => {
+      alert("Mensagem enviada com sucesso!");
+  })
+  .catch(error => {
+      alert("Erro ao enviar: " + error);
+  });
+});
